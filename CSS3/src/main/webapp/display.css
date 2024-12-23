@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+
+
+section>h2>i {
+	font-style: normal;
+	font-size: 12px;
+	color: #930;
+	background-color: #ff0;
+}
+
+#sec04, #sec05 {
+	display:inline-block;
+	vertical-align:top;
+	width: 45%;
+}
+
 ul {
 	list-style: none;
 }
@@ -42,32 +57,89 @@ section:not(#sec03) {
 }
 
 /* 4. display:none; */
-/* #sec03:hover { */
-/* 	display: none; */
-/* } */
+#sec03:hover {
+	display: none;
+}
 
-/* #sec03 *:not(h2) {
+#sec03 *:not(h2) {
 	width:45%;
 	vertical-align:top;
 	border:1px solid #00f;
 	display:inline-block;
 	
-} */
+}
+
+/* visibility: hidden; */
+#sec05>p {
+	background-color: #4af;
+	padding: 1em;
+	visibility: hidden;
+}
+
+#sec05:hover>p {
+	background-color: #4af;
+	padding: 1em;
+	visibility: visible;
+}
+
+#sec05>a {
+	background-color: #fa4;
+	padding: 0.5em;
+	visibility: hidden;
+}
+
+/* 형제 관계 선택자 A+B는 A의 바로 뒤에 위치한 B를 지정,
+                A~B는 뒤에 오는 모든 형제를 B를 지정  
+*/
+#sec05>aside:hover+a {
+	visibility: visible;
+}
+
+nav>ul {
+	padding-left: 0;
+}
+
+nav>ul>li {
+	border-bottom: 4px solid;
+	margin:0px;
+	line-height:30px;
+	text-align: center;
+	list-style: none;
+	width: 110px;
+	display: inline-block;
+	vertical-align:top;
+	background-color: teal;
+	border-radius:20px 0;
+	color: silver;
+	text-transform: capitalize;
+}
+
+nav>ul>li:hover {
+	transition:1s;
+	
+	line-height:30px;
+	text-align:center;
+	width:110px;
+	background-color: olive;
+	color:silver;
+	text-transform: capitalize;
+}
 
 
+nav>ul>li>a {
+	display:block;
+	text-decoration: none;
+}
 
+/* 1. 링크의 평상시 상태(초기, 방문한) */
+nav>ul>li>a:link, nav>ul>li>a:visited {
+	color: #530;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* 2. 링크의 동작시 상태(마우스오버, 활성화)*/
+nav>ul>li>a:hover, nav>ul>li>a:active {
+	color: #5ef;
+}
 
 
 

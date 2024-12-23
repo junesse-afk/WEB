@@ -7,12 +7,24 @@
 <link rel="stylesheet" href="display.css">
 </head>
 <body>
-	<h1>display</h1>
+<nav>
 	<ul>
-		<li>display:inline;</li>
-		<li>display:block;</li>
-		<li>display:inline-block;</li>
-		<li>display:none;</li>
+	<li><a href="sec01">section01</a></li>
+	<li><a href="sec02">section02</a></li>
+	<li><a href="sec03">section03</a></li>
+	<li><a href="sec04">section04</a></li>
+	<li><a href="sec05">section05</a></li>
+</ul>
+
+
+</nav>
+
+	<h1>display - 요소가 화면에 나타나는 방식 지정</h1>
+	<ul>
+		<li>display:inline; 한줄에 나란히 옴</li>
+		<li>display:block; 크기(width)와 마진(margin) 적용됨</li>
+		<li>display:inline-block;한줄에 나란히와 크기(width/height)와 margin 적용됨</li>
+		<li>display:none; 요소를 화면에 숨김</li>
 	</ul>
 	
 	<section id="sec01">
@@ -37,12 +49,33 @@
 		<span class="in">inline tag -span</span>
 	</section>
 	<section id="sec04">
-	<h2>4. display:none;</h2>
+	<h2>4. display:none;
+		<i>(영역은 남기고)</i> 요소를 화면에서 숨김</h2>
 		<div class="bl">block tag - div</div>
 		<p class="bl">block tag - p</p>
 		<aside class="bl">block tag - aside</aside>
 		
 				<a href="#" class="in">inline tag - a</a>
+		<b class="in">inline tag - b</b>
+		<span class="in">inline tag -span</span>
+	</section>
+	<section id="sec05">
+	<h2>5. visibility:hidden;
+		<i>(영역은 남기고)</i> 요소를 화면에서 숨김</h2>
+		<div class="bl">block tag - div</div>
+		<p class="bl">block tag - p</p>
+		<aside class="bl">block tag - aside</aside>
+		<a href="#" class="in">inline tag - a</a>
+		<b class="in">inline tag - b</b>
+		<span class="in">inline tag -span</span>
+	</section>
+	<section id="sec06">
+		<h2>6. visibility:hidden;</h2>
+		
+		<div class="bl">block tag - div</div>
+		<p class="bl">block tag - p</p>
+		<aside class="bl">block tag - aside</aside>
+		<a href="#" class="in">inline tag - a</a>
 		<b class="in">inline tag - b</b>
 		<span class="in">inline tag -span</span>
 	</section>
