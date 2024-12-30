@@ -1,185 +1,108 @@
 @charset "UTF-8";
-
-
-
-section>h2>i {
-	font-style: normal;
-	font-size: 12px;
-	color: #930;
-	background-color: #ff0;
-}
-
-#sec04, #sec05 {
-	display:inline-block;
-	vertical-align:top;
-	width: 45%;
-}
-
-ul {
-	list-style: none;
-}
-
-li {
-	margin: 10px;
-	border: 1px solid;
-}
-
-section:not(#sec03) {
-	display:inline-block;
-}
-
-/* 1. display:inline; */
-#sec01>.bl {
-	border:1px solid #00f;
-/* 	width: 200px; */
-	display:inline; /* 가로정렬 */
-	
-}
-
-/* 2. display:block; */
-#sec02>.in {
-	border:1px solid #00f;
-	width: 300px; height:50px;
-	margin: 30px;
-	display:block; /* 세로정렬 */
-}
-
-/* 3. display:inline-block; */
-#sec03 *:not(h2) {
-	border:1px solid #00f;
-	display:inline-block;
-}
-
-#sec01, #sec02 {
-	width:45%;
-	vertical-align: top;
-	display: inline-block;
-}
-
-/* 4. display:none; */
-#sec03:hover {
-	display: none;
-}
-
-#sec03 *:not(h2) {
-	width:45%;
-	vertical-align:top;
-	border:1px solid #00f;
-	display:inline-block;
-	
-}
-
-/* visibility: hidden; */
-#sec05>p {
-	background-color: #4af;
-	padding: 1em;
-	visibility: hidden;
-}
-
-#sec05:hover>p {
-	background-color: #4af;
-	padding: 1em;
-	visibility: visible;
-}
-
-#sec05>a {
-	background-color: #fa4;
-	padding: 0.5em;
-	visibility: hidden;
-}
-
-/* 형제 관계 선택자 A+B는 A의 바로 뒤에 위치한 B를 지정,
-                A~B는 뒤에 오는 모든 형제를 B를 지정  
-*/
-#sec05>aside:hover+a {
-	visibility: visible;
-}
-
-nav>ul {
-	padding-left: 0;
-}
+nav>ul {margin-bottom: 5em;
+padding-left: 0/* 목록 앞의 기본 여백 제거 */;
+text-align: center;}
 
 nav>ul>li {
-	border-bottom: 4px solid;
-	margin:0px;
-	line-height:30px;
-	text-align: center;
-	list-style: none;
-	width: 110px;
-	display: inline-block;
-	vertical-align:top;
-	background-color: teal;
-	border-radius:20px 0;
-	color: silver;
-	text-transform: capitalize;
-}
+border-bottom: 10px solid;
+background-color:#5ef;
+width: 150px; height: 30px;
+display: inline-block/* 나란히 */;
+border-radius:20px 0;
+margin-right:12px;
+text-align: center; 
+text-transform:capitalize;
+line-height:30px; }
 
 nav>ul>li:hover {
-	transition:1s;
-	
-	line-height:30px;
-	text-align:center;
-	width:110px;
-	background-color: olive;
-	color:silver;
-	text-transform: capitalize;
-}
+border-bottom: 10px solid #5ef;
+ background-color:#530;
+ transition:1s; /* 단순한 애니효과 */}
 
+nav>ul>li>a {/* border: 1px solid #00f; */
+width: 150px; height: 30px;
+display: block /* 크기 적용 */;
+text-decoration:none;}
 
-nav>ul>li>a {
-	display:block;
-	text-decoration: none;
-}
-
-/* 1. 링크의 평상시 상태(초기, 방문한) */
 nav>ul>li>a:link, nav>ul>li>a:visited {
-	color: #530;
-}
-
-/* 2. 링크의 동작시 상태(마우스오버, 활성화)*/
+ /* 1. 링크의 평상시 상태 (초기,방문한)
+  a:link, a:visited */	
+ color: #530; }
 nav>ul>li>a:hover, nav>ul>li>a:active {
-	color: #5ef;
-}
+ /* 2. 링크의 동작시 상태 (마우스오버,활성화)
+  a:hover, a:active */	
+ color: #5ef; }
 
 
 
-#sec04>*:not(section, h2) {
-	border: 1px solid black;
-	display: inline-block;
-}
+section>h2>i {background-color:#ff0;
+font-style: normal;
+font-size: 12px;
+color: #930;}
 
-#sec04>b {
-	background-color: #f4a;
-	padding: 1em;
-	display: none;
-}
+#sec01, #sec02 {
+display: inline-block;
+width: 45%;
+vertical-align:top
+/* inline요소들끼리의 수직정렬 */; }
 
-#sec04>div {
-	background-color: skyblue;
-	padding: 1.5em;
-	display: none;
-}
+   /* 1. display:inline; */
+#sec01>.bl {border: 1px solid #00f;
+/* width: 200px; */
+display: inline;}
 
-#sec04:hover>b {
-	display: block;
-}
-
-
-#sec04:hover>div {
-	background-color: skyblue;
-	padding: 1.5em;
-	display: inline-block;
-}
+ 
+  /* 2. display:block; */
+#sec02>.in {border: 1px solid #0f0;
+width: 300px; height: 50px;
+margin: 30px;
+display: block;}
 
 
-
-
+ /* 3. display:inline-block; */
+#sec03>*:not(h2) {border: 1px solid #f00;
+width: 300px; height: 50px;
+margin: 30px;
+display: inline-block;}
 
 
 
+#sec04, #sec05 {display: inline-block;
+vertical-align:top;
+width: 45%;}
+ 
+ /* 4. display:none; */
+#sec04>*:not(h2) {border: 1px solid #770;}
+
+#sec04>div {background-color: #4fa;
+ padding: 1em;
+ display: none;}
+
+#sec04:hover>div {display: block;}
+
+#sec04>b {background-color: #f4a;
+ padding: 1em;
+ display: none;}
+
+#sec04:hover>b {/* ???? */
+	display: inline;}
 
 
+ /* 5. visibility:hidden; */
+#sec05>p {background-color: #4af;
+ padding: 1em;
+ visibility: hidden;}
 
+#sec05:hover>p {visibility: visible;}
+
+#sec05>a {background-color: #fa4;
+ padding: 0.5em;
+ visibility: hidden;}
+
+#sec05>aside:hover+a {
+ /* 형제관계선택자 A+B는 A의 바로 뒤에 위치한 형제B를 지정,
+               A~B는 A의 뒤에 오는 모든 형제B를 지정 */	
+ visibility: visible;	}
 
 
 
