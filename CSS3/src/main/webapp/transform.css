@@ -1,4 +1,11 @@
 @charset "UTF-8";
+section>h2>span {background-color: #afc;
+	padding: 6px;
+	font-size: 15px;
+	color: #f00;
+}
+ 
+
  /* 1. transform:translate(); 위치 변형 */
 #sec01>p {border: 1px solid;
 width: 200px;}
@@ -30,7 +37,8 @@ transform:translate(-50%,-50%);}
 
 
  /* 2. transform:scale(); 크기 변형 */
-#sec02>p {border: 2px solid;
+#sec02>p, #sec03>p, #sec04>p, #sec05>p {
+	border: 2px solid;
 width: 300px;
 display: inline-block;
 margin: 30px;}
@@ -42,39 +50,68 @@ margin: 30px;}
 #sec02:hover>.sc04 {transform:scaleY(2);}
 .sc05 {overflow: hidden;}
 .sc05:hover>img {transform:scale(1.2,1.2);}
-
 #sec02:hover>.sc06 {
 	transform:scale(0.1,0.1);
-	transition:1s;
-}
+	transition:1s;}
 
-section h2 span {
-	font-size: 14px;
-	color: red;
-	padding: 4px;
-	background: #afc;
-}
 
- /* 3. transform:rotate(); 회전 변형 */
-
-#sec03>p {border: 2px solid;
-width: 300px;
-display: inline-block;
-margin: 30px;}
-
-#sec03:hover>.ro01 {
-	transform:rotate(90deg);
-	transition:2s;
-}
+  /* 3. transform:rotate(); 회전 변형 */
+#sec03:hover>.ro01 {transform:rotate(180deg);
+transition:1s;}
 
 #sec03:hover>.ro02 {
-	transform:rotate(180deg);
-	transition:1s;
-}
+transform:rotate(-180deg);	
+transition:1s;}
+
+#sec03:hover>.ro03 {
+transform:rotateX(180deg);
+transition:1s;}
+
+#sec03:hover>.ro04 {
+transform:rotateY(180deg);
+transition:1s;	}
+
+#sec03:hover>.ro05 {
+transform:rotate(360deg);	
+transition:1s;}
+
+#sec03:hover>.ro06>img {
+transform:rotateY(-720deg);	
+transition:1s;}
 
 
+ /* 4. transform:skew(); 기울기 변형 */
+#sec04:hover>.sk01 {transform:skewX(30deg);	
+transition:1s;}
+#sec04:hover>.sk02 {transform:skewX(-30deg);	
+transition:1s;}
+#sec04:hover>.sk03 {transform:skewY(30deg);	
+transition:1s;}
+#sec04:hover>.sk04 {transform:skewY(-30deg);	
+transition:1s;}
+#sec04:hover>.sk05 {transform:skew(30deg,30deg);
+transition:1s;	}
 
+ /*  */
+.or01 {transform-origin:50% 100%;}
+#sec05:hover>.or01 {
+transform:scale(1,2);	
+transition:1s;}
 
+.or02 {transform-origin:left center;}
+#sec05:hover>.or02 {
+ transform:scale(0.1,1);	
+transition:1s;}
+
+.or03 {transform-origin:0 0; }
+#sec05:hover>.or03 {
+ transform:rotate(360deg);		
+transition:1s;}
+
+.or04 {transform-origin:-200px -250px; }
+#sec05:hover>.or04 {
+transform:rotate(360deg);		
+transition:1s;}
 
 
 

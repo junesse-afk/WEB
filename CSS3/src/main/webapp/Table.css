@@ -1,154 +1,111 @@
 @charset "UTF-8";
+table, th, td {border: 1px solid;}
+ 
+h2>i {background-color:#4ea;
+padding:4px;
+font-style: normal;   
+font-size: 14px;
+color:#f00;
+/* display: none; 
+visibility: hidden;
+opacity: 0;*/ 
+width:0px;  
+display: inline-block;
+overflow: hidden;
+white-space: nowrap;}
 
+h2:hover>i {/* display:inline;  
+visibility: visible;
+opacity: 1;*/ 
+width:500px; 
+transition:1s;}
+ 
+  /* 1. table-layout:fixed; */
+table#tb01, #tb01 th, #tb01 td {
+border-color: #064;}
 
-table, th, td {
-	border: 1px solid;
-}
+#tb01 {width: 900px; height: 600px;
+table-layout:fixed; }
 
-/* 1. table-layout */
-#tb01 {
-	width: 900px;
-	height: 600px;
-	table-layout: fixed;
-}
+#tb01 th {background-color: #064;
+ color: #fff;}
 
-#tb01, #tb01 th, #tb01 td {
-	border-color: #064;
-}
+#tb01 td {padding-left:12px; }
 
-#tb01 th{
-	background-color: #064;
-	color: #fff;
-}
+ 
+  /* 2. stripe style */
+#tb02 {width: 900px; height: 600px;}
 
-#tb01 td {
-	padding-left: 12px;
-}
-/*---------------------------*/
+#tb02 th {height: 55px;
+background-color: #058;
+padding-left: 12px;
+text-align: left; 
+font-size:1.05em;
+color: #fff;}
 
-/* 2. stripe style */
-#tb02 {
-	width:900px;
-	height: 600px;
-}
-
-#tb02 th {
-	height: 55px;
-	background-color: #058;
-	color: #fff;
-	text-align: left;
-	padding-left: 12px;
-	font-size: 1.05em;
-}
-
-#tb02 td {
-	padding-left: 12px;
-}
+#tb02 td {padding-left: 12px;}
 
 #tb02 tr:nth-of-type(2n-1) {
 	/* 순서선택자 A:nth-of-type(n)는
-	n번째의 A요소를 지정함. n는 숫자나 수식 가능 */
-	background-color: #9cf;
-}
+ n번째의 A요소를 지정함. n은 숫자나 수식 가능 */
+background-color:#9cf; }
 
-h2>i {
-	background-color: #4ea;
-	color: #f00;
-	font-style: normal;
-	font-size: 14px;
-	padding: 4px;
-	display: none;
-}
 
-h2:hover>i {
-	background-color: #4ea;
-	color: #f00;
-	font-style: normal;
-	font-size: 14px;
-	padding: 4px;
-	display: inline;
-}
 
-#tb02 tr:nth-of-type(6)>td:nth-of-type(2){
-	background-color: black;
-	color: red;
-}
 
-#tb02 tr:hover{
-	background-color: black;
-	color: red;
-}
 
-/*---------------------------*/
 
-/* 3. border-spacing */
-#tb03 {
-	border-spacing: 10px 20px;
-}
 
-#tb03 th {
-	padding: 10px 20px;
-}
 
-#tb03 td {
-	padding: 8px 20px;
-}
 
-/*---------------------------*/
 
-/* 4. border-collapse: collapse; */
 
-#di03, #di04 {
-	display: inline-block;
-}
 
-#tb04 {
-	border-collapse: collapse;
 
-}
 
-#tb04 th {
-	padding: 14px 50px;
-}
 
-#tb04 td {
-	padding: 12px 50px;
-}
 
-/*---------------------------*/
 
-/* 5. 말줄임표 자동 표시  */
 
-#tb05 {
-	width: 800px;
-	height: 400px;
-}
 
-#tb05 td:nth-of-type(1), #tb05 td:nth-of-type(3) {
-	width: 200px;
-}
 
-.txt {
-	width: 400px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
 
-.ell {
-	background-color: #000;
-	color: #fff;
-	width: 200px;
-	height: 30px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	text-shadow: 1px 1px 3px yellow;
-	
-}
 
-.ell:hover {
-	width: 800px;
-	transition:1s;
-	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

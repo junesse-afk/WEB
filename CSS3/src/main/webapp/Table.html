@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>table</title>
 <link href="style.css" rel="stylesheet">
-<link href="Table.css" rel="stylesheet">
+<link href="table.css" rel="stylesheet">
 </head>
 <body>
-<h1>TABLE</h1>
+<h1>table</h1>
 
-<h2>1. table-layout: fixed; 셀들을 균등 분할</h2>
+<h2>1. table-layout:fixed;</h2>
 <table id="tb01">
   <tr>
     <th>Company</th>
@@ -68,10 +68,9 @@
   </tr>
 </table>
 
-<h2>2. stripe style- tr:nth-of-type(2n/2n-1)
-<br>
-<i>	/* 순서선택자 A:nth-of-type(n)는
-	n번째의 A요소를 지정함. n는 숫자나 수식 가능 */</i>
+<h2>2. stripe style - tr:nth-of-type(2n/2n-1)
+ <i>순서선택자 A:nth-of-type(n)는
+ n번째의 A요소를 지정. n은 숫자나 수식 가능</i>
 </h2>
 <table id="tb02">
   <tr>
@@ -131,8 +130,7 @@
   </tr>
 </table>
 
-<div id="di03">
-<h2>3. border-spacing: n (Xn Yn); 셀들의 간격 조절</h2>
+
 <table id="tb03">
   <tr>
     <th>Company</th>
@@ -190,11 +188,8 @@
     <td>France</td>
   </tr>
 </table>
-</div>
 
-<div id="di04">
-<h2>4. border-collapse: collapse;
-(이중테두리 제거)셀들의 간격 없게</h2>
+
 <table id="tb04">
   <tr>
     <th>Company</th>
@@ -252,74 +247,6 @@
     <td>France</td>
   </tr>
 </table>
-</div>
-
-<div id="di04">
-<h2>5. 말줄임표 자동 표시 </h2>
-<ul>
-	<li>white-space:nowrap; 공백처리(자동 줄바꿈 금지)</li>
-	<li>over-flow:hidden; 영역 밖의 내용 처리 숨김</li>
-	<li>text-overflow: ellipsis; 영역 밖의 글자...표시</li>
-</ul>
-<table id="tb05">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
-  </tr>
-  <tr>
-    <td>Francisco Chang</td>
-    <td><div class="txt">Centro comercial MoctezumaAlfreds FutterkisteAlfreds FutterkisteFutterkisteAlfreds Futterkiste</div></td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Königlich Essen</td>
-    <td>Philip Cramer</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>North/South</td>
-    <td>Simon Crowther</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Paris spécialités</td>
-    <td>Marie Bertrand</td>
-    <td>France</td>
-  </tr>
-</table>
-</div>
-<p class="ell">가로크기가 고정된 영역 안에서 글자가 길어지면 자동으로 생략표시(...)이 나타나게 한다</p>
 
 </body>
 </html>

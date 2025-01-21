@@ -20,110 +20,81 @@ padding-right:30px; }
 .p03 {padding: 3em 30% 1em;}
 .p04 {padding: 3em 30% 1em 10%;}
 
-/* a에서의 padding 활용(board)*/
-
-legend {
-	padding-left: 0.5em;
-	padding-right: 0.05em;
-	font-size: 20px;
-	font-weight: bold;
-	text-transform: capitalize;
-}
-
-fieldset {padding: 50px 0 40px 30px;
-	
-}
-
-#name, #id {
-	padding: 0.7em;
-	margin-bottom: 13px;
-}
+ 
+ /* form에서의 padding 활용 */
+fieldset {padding:50px 0 40px 30px;}
+ 
+legend {padding-left: 0.5em;
+padding-right:0.5em;  
+font-size: 20px;
+font-weight: bold;
+text-transform: capitalize;} 
 
 label {
-	text-transform: uppercase;
-}
+text-transform: uppercase;}
 
-.lb1 {
-	padding-right: 20px;
-}
+.id {padding-right:30px;}
 
-.lb2 {
-	padding-right: 50px;
-}
+#name, #id {padding: 0.7em;}
 
-#sbm {
-	margin-top: 15px;
-	margin-left: 45px;
-	border: none;
-	padding: 0.7em 5em;
-	background-color: black;
-	color: white;
-}
+#sbm {padding: 0.7em 5em;}
 
 
-#brd>table {
-	border: 1px solid black;
-	width: 800px; height: 400px;
-}
 
-#brd nav a {
-	background-color: gray;
-	padding: 2px 15px;
-	text-align: center;
-	text-decoration: none;
-}
+  /* a에서의 padding 활용(board) */
+#brd {/* border: 1px solid red; */
+padding-top: 5em;}
 
-#brd nav a:hover {
-	background-color: #029;
-	color: #9ed;
-}
+#brd>table {border: 1px solid;
+width: 800px; height: 400px;}
 
-nav {
-	margin-top: 30px;
-	font-size: 30px;
-	text-align: center;
-}
+#brd>nav {/* border: 1px solid red; */
+padding: 50px 0;}
 
-/* img에서의 padding 활용(board)*/
-#brd {
-	
-	margin-top: 3em;
-}
-
-#brd2 {
-	margin-top: 3em;
-	margin-left: 3em;
-}
+#brd>nav>a {background-color: #9ed;
+ /* width: 30px; height: 36px; */
+ padding: 10px 12px;
+ text-decoration: none;
+ color: #029;}
+ 
+#brd>nav>a:hover {
+background-color: #029;
+color:#9ed;	}
 
 
-.ph01 {
-	border: 30px solid #432;
-	padding: 50px;
-	box-shadow: 1px 2px 10px #333;
-	width: 400px; height: 200px;
-}
+ /* img에서의 padding 활용 */
+p>img {width: 400px;
+margin-left: 50px;}  
 
-.ph02 {
-	border: 1px solid;
-	border-radius: 9px;
-	background-color: black;
-	padding: 20px 20px 170px;
-	margin-top: 20px;
-	width: 400px; height: 200px;
-	box-shadow: 1px 2px 10px #333;
-}
+.ph01 {border: 34px solid #432;
+padding: 70px;
+box-shadow: 1px 2px 4px #333;}
 
-.ph03 {
-	border-radius: 50%;
-	margin-top: 20px;
-	width: 400px; height: 200px;
-}
+.ph02 {border: 1px solid;
+border-radius:6px;
+padding: 20px 20px 140px;
+opacity:0.7;
+box-shadow: 0px 0px 2px #333; }
+
+.ph02:hover {opacity:1;
+box-shadow: 1px 2px 10px #333;
+transition:0.8s; }
+
+.ph03 {border-radius: 50%;}
 .ph03:hover {
-	border-radius: 0 50%;
-	transition:0.8s;
-	margin-top: 20px;
-	width: 400px; height: 200px;
-}
+border-radius:0 50%;
+transition:0.8s; 	}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

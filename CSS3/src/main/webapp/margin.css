@@ -1,119 +1,94 @@
 @charset "UTF-8";
-
-body {
-	margin: 0px;
+.margin {border-left:12px solid #bbb;
+background-color: #eee;
+padding: 1.5em;
+line-height: 1.8;}
+.margin:first-line {
+ /* 선택자 A:first-line는 A의
+ 첫 줄에만 적용 */
+font-size: 1.05em;
+font-weight: bold;
+text-decoration:underline;
+color: #333;}
+.margin:first-letter {
+ /* 선택자 A:first-letter는 A의 
+ 첫 글자에만 적용 */	
+ background-color: #900;
+ padding:4px;
+ color: #fff;	
 }
 
-li {
-	list-style-type: none;
-}
 
-/* 1. margin의 방향별 적용 */
+ /* 1. margin의 방향별 적용 */
+#mg {border: 1px solid;
+margin:40px; }
 
-#mg {
-	border: 1px solid;
-	margin:40px;
-}
+#ul-mg01>li {border: 1px solid #060;}
+.mt {margin-top: 3em;}
+.mr {margin-right:3em; 
+text-align: right;}
+.mb {margin-bottom:3em; }
+.ml {margin-left:3em; }
 
 
-#ul-mg01 li {
-	border: 1px solid #060;
-}
+ /* 2. margin의 값 갯수별 적용법 */
+#ul-mg02>li {border: 1px solid #600;}
 
-.mt {
-	margin-top: 3em;
-}
+.m01 {margin: 50px;}
+.m02 {margin: 50px 20%; }
+.m03 {margin: 50px 20% 80px;}
+.m04 {margin: 50px 30% 30px 20%;}
 
-.mr {
-	text-align: right;
-	margin-right: 3em;
-}
-
-.mb {
-	margin-bottom: 3em;
-}
-
-.ml {
-	margin-left: 5em;
-}
-
-/* 2. marign의 값 갯수별 적용법 */
-#ul-mg02 li {
-	border: 1px solid #600;
-}
-
-.m01 {
-	margin: 50px;
-}
-.m02 {
-	margin: 50px 20%;
-}
-
-.m03 {
-	margin: 50px 20% 80px;
-}
-
-.m04 {
-	/* 위아래 마진이 다를때 큰값으로 적용됨 */
-	margin: 50px 30% 30px 20%;
-}
-
-#cnt {
+#cnt {background-color:#edf;
+ width:300px;
+/*  margin-left:auto;
+ margin-right:auto; */
+ margin: 4em auto;
+ padding:0.3em;
 	font-size: 50px;
-	font-weight: bold;
-	background-color: #edf;
-	width: 300px;
-	padding: 0.3em;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	/* magin: auto;[두번째값을 오토] */
-}
+ font-weight: bold;
+ text-align: center;
+ text-transform: uppercase;}
 
-#cnt>span {
-	font-size: 16px;
-	text-transform: none;
-}
+#cnt>span {font-size: 16px;
+text-transform: none;} 
+#cnt>span>b {color: #900;}
 
 
-#cnt>span>b {
-	color: #900;
+
+ /* form에서의 margin 활용 */
+fieldset {width: 300px;
+margin: 3em auto; } 
+ 
+.id {margin-right: 27px; }
+#sbm {margin-top: 2em;}
+
+
+ /* a에서의 margin 활용 */
+table {border: 1px solid;
+width: 800px; height: 400px;
+ margin-bottom: 5em;}
+ 
+#brd>nav {/* border: 1px solid red; */
+margin-bottom:2em; }
+
+#brd a {background-color:#ff5;
+    margin:0.5em;
+	padding: 10px;
+	text-decoration:none;
+	color:#550;}
+#brd a:hover {background-color:#550;
+color:#ff5;	
 }
 
-/* form에서 margin 활용 */
-fieldset {
-	margin: auto;
-	width: 300px;
-}
 
-#id {
-	margin-left: 27px;
-}
 
-#sbm {
-	margin: auto;
-}
 
-table {
-	margin: auto;
-	border: 1px solid;
-	width: 500px; height: 400px;
-}
 
-#brd a {
-	padding: 7px 13px;
-	background-color: green;
-	text-decoration: none;
-	line-height:1.8;
-}
 
-#brd a:hover {
-	
-	color: yellow;
-}
 
-nav {
-	margin: 1em auto;
-	text-align: center;
-	font-size: 1.5em;
-}
+
+
+
+
+
