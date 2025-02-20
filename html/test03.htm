@@ -1,0 +1,227 @@
+﻿<html>
+ <head>
+  <title>list - 목록 만들기</title>
+ </head>
+ <body>
+  <hr>
+  <h1>list - 목록 만들기</h1>
+  <ul>
+   <li>&lt;ul&gt; 순서가 없는 목록</li>
+     <li>&lt;ol&gt; 순서가 있는 목록</li>
+   <li>&lt;dl&gt; 정의 목록</li>
+  </ul>
+
+  <hr>
+  <h2>1. ul(Unordered List) - 순서가 없는 목록</h2>
+  <ul>
+   <li>coffee</li>
+   <li>tea</li>
+   <li>cake</li>
+   <li>brade</li>
+  </ul>
+
+ <h4>[문제] 3개짜리 순서가 없는 목록 만들기</h4>
+  <ul>
+   <li>html</li>
+   <li>css</li>
+   <li>js</li>
+  </ul>
+
+  <ul>
+   <li>이름</li>
+   <li>주소</li>
+   <li>전공</li>
+   <li>취미와 특기</li>
+  </ul>
+
+  <hr>
+  <h3>하위 목록 만들기 </h3>
+  <ul>
+   <li>coffee</li>
+   <li>tea
+    <ul> 
+        <li>녹차
+         <ul>
+           <li>찬</li>
+           <li>따뜻한</li>
+         </ul>
+        </li> <!-- /li의 위치 주의 -->
+        <li>홍차</li>
+        <li>아이스티</li>
+    </ul>
+   </li>
+   <li>cake
+    <ul>
+     <li>초코cake</li>
+     <li>바닐라cake</li>
+     <li>생크림cake</li>
+    </ul>
+   </li>
+   <li>brade</li>
+  </ul>
+
+
+
+  <hr>
+  <h2>2. ol(Ordered List) - 순서가  있는 목록</h2>
+  <ol>
+   <li>coffee</li>
+   <li>tea</li>
+   <li><b>cake</b></li>
+   <li>brade</li>
+  </ol>
+
+  <h4>[문제] 3개짜리 순서가  있는 목록 만들기</h4>
+  <ol>
+   <li>html</li>
+   <li>css</li>
+   <li>js</li>
+  </ol>  
+
+  
+  <h3>ol 앞의 모양 변경 속성 type="1/a/A/i/I"</h3>
+  <ol type="1">
+   <li>1교시 (ol type="1") </li>
+   <li>2교시</li>
+   <li>3교시</li>
+   <li>4교시</li>
+   <li>5교시</li>
+   <li>6교시</li>
+   <li>7교시</li>
+   <li>8교시</li>
+  </ol>
+
+  <ol type="a">
+   <li>1교시 (ol type="a") </li>
+   <li>2교시</li>
+   <li>3교시</li>
+   <li>4교시</li>
+   <li>5교시</li>
+   <li>6교시</li>
+   <li>7교시</li>
+   <li>8교시</li>
+  </ol>
+
+  <ol type="A">
+   <li>1교시 (ol type="A")</li>
+   <li>2교시</li>
+   <li>3교시</li>
+   <li>4교시</li>
+   <li>5교시</li>
+   <li>6교시</li>
+   <li>7교시</li>
+   <li>8교시</li>
+  </ol>
+
+  <ol type="i">
+   <li>1교시 (ol type="i")</li>
+   <li>2교시</li>
+   <li>3교시</li>
+   <li>4교시</li>
+   <li>5교시</li>
+   <li>6교시</li>
+   <li>7교시</li>
+   <li>8교시</li>
+  </ol>
+
+  <ol type="I">
+   <li>1교시 (ol type="I") </li>
+   <li>2교시</li>
+   <li>3교시</li>
+   <li>4교시</li>
+   <li>5교시</li>
+   <li>6교시</li>
+   <li>7교시</li>
+   <li>8교시</li>
+  </ol>
+
+  <h3>ol 시작 변경 속성 start="n"</h3>
+  <ol start="100">
+   <li>1교시</li>
+   <li>2교시</li>
+   <li>3교시</li>
+   <li>4교시</li>
+   <li>5교시</li>
+   <li>6교시</li>
+   <li>7교시</li>
+   <li>8교시</li>
+  </ol>
+
+  <h4>[문제] "D"로 시작하는 ol목록 만들기</h4>
+  <ol type="A" start="4">
+   <li>html</li>
+   <li>css</li>
+   <li>js</li>
+  </ol>  
+
+  <hr>
+  <h4>[문제] 하위 목록 만들기 </h4>
+  <ol>
+   <li>html
+    <ol type="i">
+     <li>tag</li>
+     <li>속성</li>
+    </ol>
+   </li>
+   <li>css</li>
+   <li>js</li>
+  </ol> 
+
+  <hr>
+  <h2>3. dl(Description List) - 정의 목록</h2>
+
+  <dl>
+   <dt>&lt;dl&gt;</dt>
+   <dd>- <mark><b>정의 목록</b></mark>을 구성하는 tag </dd>
+   <dt>&lt;dt&gt;</dt>
+     <dd>- <b><mark>정의 대상</mark></b>을 지정하는 tag</dd>
+   <dt>&lt;dd&gt;</dt>
+   <dd>- <mark><b>정의 내용</b></mark>을 지정하는 tag</dd>
+  </dl>
+
+  <dl>
+   <dt>html</dt>
+   <dd>Hyper Text Markup Language의 약자.</dd>
+  </dl>
+
+  <dl>
+   <dt>html?</dt>
+   <dd>Hyper Text Markup Language의 약자.</dd>
+   <dd>웹페이지의 구조를 만드는 표준 언어.</dd>
+   <dd>명령어(Tag)로 이루어짐.</dd>
+  </dl>
+
+  <dl>
+   <dt>html?</dt>
+   <dd>웹페이지의 구조를 만드는 표준 언어.</dd>
+   <dt>css?</dt>
+   <dd>웹페이지의 디자인을 담당하는 언어.</dd>
+   <dt>js?</dt>
+   <dd>웹페이지의 동적인 기능을담당하는  언어.</dd>
+  </dl>
+
+
+
+
+
+
+  <hr>
+  <h4>[문제]  본인을 3가지 관점(측면)에서 정의(설명)하는 정의 목록 만들기</h4>
+  <dl>
+   <dt> 배지영</dt>
+   <dd> 25</dd>
+   <dd> 00</dd>
+   <dd> B형</dd>
+  </dl>
+
+
+
+ </body>
+</html>
+
+
+
+
+
+
+
